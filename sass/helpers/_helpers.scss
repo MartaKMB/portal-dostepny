@@ -20,6 +20,7 @@ $font: 'Lato', sans-serif;
 }
 
 %anchor {
+    display: block;
     text-decoration: none;
     color: $bright_color;
     

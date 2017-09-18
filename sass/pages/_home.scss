@@ -58,3 +58,67 @@ div.div_contact {
     margin: 0;
     padding: 10px;
 }
+
+@media only screen and (min-width: $breakpoint_destkop) {
+    div.div_header {
+        text-align: right;
+        @include rotate(6deg);
+        min-width: 120%;
+        min-height: 200px;
+        margin-top: -100px;
+        position: relative;
+
+        h1.page_title {
+            position: absolute;
+            bottom: 0;
+            right: 20%;
+            font-size: 2.8em;
+        }
+    }
+    
+    ol.main_nav {
+        display: block;
+        margin: {
+            top: -120px;
+            left: auto;
+            right: auto;
+        }
+        width: 90%;
+        position: relative;
+        
+        
+        > li {
+            width: 450px;
+            height: 200px;
+            @include rotate(6deg);
+            position: absolute;
+            > a {
+               @include rotate(-6deg);
+                > i {
+                   
+                }
+        }
+    }      
+}
+    
+    $total_li: 6;
+    $start: 2px;
+    $step: 120px;
+    
+    @for $i from 1 through $total_li {
+        .main_nav>li:nth-child(#{$i}) {
+            
+            top: ($start + $step) * $i;
+            
+            @if($i % 2 == 0) {
+                right: 14%;
+            } @else {
+                left: 14%;
+            }
+        }
+    }
+    
+    div.div_contact {
+        display: none;
+    }
+}
