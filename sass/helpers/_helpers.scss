@@ -1,0 +1,29 @@
+$page_brighter_color: rgb(255, 255, 243);
+$dark_background_color: rgb(32, 1, 133);
+$bright_color: rgb(247, 247, 3);
+$dark_highlight_color: rgb(198, 2, 113);
+
+$breakpoint_destkop: 768px; 
+
+$font: 'Lato', sans-serif;
+
+@mixin rotate($deg){
+    -ms-transform: rotate($deg); 
+    -webkit-transform: rotate($deg); 
+    transform: rotate($deg);
+}
+
+@mixin position($top, $left, $position: absolute) {
+    postion: $position;
+    top: $top;
+    left: $left;
+}
+
+%anchor {
+    text-decoration: none;
+    color: $bright_color;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
