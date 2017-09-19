@@ -20,72 +20,12 @@ body{
     margin:{
         left:auto;
         right: auto;
-        top: 200px;
+        top: 100px;
         bottom: 60px;
 }
     } 
 
-@media only screen and (max-width: 1024px) {
-    #menu {
-    background: url(../img/concrete_seamless.png);
-    background-repeat: repeat;
-    position:relative;
-    }
-    .fundactions{
-    display: flex;
-    flex-direction: column;
-    top:0;
-    left:0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    }
-    .applications{
-    display: flex;
-    flex-direction: column;
-    top:0;
-    left:0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    }
-    .friendlyPlaces{
-     display: flex;
-    flex-direction: column;
-    top:0;
-    left:0;
-    right: 0;
-    bottom: 0;
-    position: absolute;    
-    }
-    .articles{
-    display: flex;
-    flex-direction: column;
-    top:0;
-    left:0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    }
-    .animals{
-    display: flex;
-    flex-direction: column;
-    top:0;
-    left:0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    }
-    .law{
-    display: flex;
-    flex-direction: column;
-    top:0;
-    left:0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    }
-}
+
 .mainImg{
     z-index: 100;
     width: 350px;
@@ -93,12 +33,7 @@ body{
     position: absolute;
 }
 
-.overlayFundaction {
-  @extend .overlay;
-  top: -10%;
-  left: 5%;
 
-}
 .singleImg:hover .overlayFundaction{
   @include hoverImg;
 }
@@ -114,11 +49,15 @@ body{
   -ms-transform: translate(-50%, -50%);
   font-weight: bold;
 }
+.overlayFundaction {
+  @extend .overlay;
+  top: -10%;
+  left: 5%;
 
+}
 .fundactions{
     top:-10%;
     left:5%;
-    position: absolute;
 }
 .overlayApp {
   @extend .overlay;    
@@ -155,7 +94,7 @@ body{
    @include hoverImg;
 }
 .articles{
-     top:30%;
+    top:30%;
     right:-25%;
 }
 .overlayAnimals {
@@ -181,4 +120,59 @@ body{
 .law{
     bottom: -10%;
     right: 5%;
+}
+h1{
+    display: none;
+}
+@media only screen and (max-width: 1024px) {
+    h1{
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+        display: block;
+        top:0;
+    }
+    #menu {
+    background: url(../img/concrete_seamless.png);
+    background-repeat: repeat;
+    width:300px;
+    height:500px;
+    }
+    .mainImg{
+        display:none;
+    }
+    .text{
+        font-size: 40px;
+    }
+    .fundactions, .overlayFundaction {
+    top:20%;
+    @include hoverImg;    
+    @include smallImg;
+    }
+    .applications, .overlayApp{
+    top:60%;
+    @include hoverImg;    
+    @include smallImg;
+    }
+    .friendlyPlaces, .overlayPlaces {
+    top:100%;
+    @include hoverImg;    
+    @include smallImg;
+    }
+    .articles, .overlayArticles{
+    top:140%;
+    @include hoverImg;    
+    @include smallImg;    
+    }
+    .animals, .overlayAnimals{
+    top:180%;
+    @include hoverImg;    
+    @include smallImg;
+    }
+    .law, .overlayLaw{
+    top:220%;
+    @include hoverImg;    
+    @include smallImg;    
+
+    }
 }
