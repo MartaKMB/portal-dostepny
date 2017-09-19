@@ -1,0 +1,44 @@
+#menu{
+    position:relative;
+    width:1000px;
+    height:1000px;
+    border: 5px solid blue;
+    border-radius: 50%;
+    margin:{
+        left:auto;
+        right: auto;
+        top: 60px;
+        bottom: 60px;
+}
+    } 
+.mainImg{
+    z-index: 100;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    //    border-radius: 50%;
+}
+.fundactions{
+    top:-10%;
+    left:5%;
+}
+.applications{
+    top:-10%;
+    right:5%;
+}
+.friendlyPlaces{
+    top:30%;
+    left:-25%;
+}
+.articles{
+     top:30%;
+    right:-25%;
+}
+.animals{
+    bottom:-10%;
+    left:5%;
+}
+.law{
+    bottom: -10%;
+    right: 5%;
+}
