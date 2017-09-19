@@ -1,0 +1,14 @@
+.overlay {
+  position: absolute;
+  border-radius: 50%;    
+  width: 350px;
+  height: 350px;
+  opacity:0;
+  transition: .5s ease;
+  background-color: #ffff00;
+}
+
+@mixin hoverImg {
+    opacity: 5;
+    z-index: 200;
+}
