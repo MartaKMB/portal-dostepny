@@ -2,19 +2,29 @@ body {
     margin: 0;
     padding: 0;
     font-family: $font;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.2rem;
     background: $page_brighter_color;
+    box-sizing: border-box;
+}
+
+div#page_container {
+    overflow: hidden;
 }
 
 div.div_header {
     background: $dark_highlight_color;
     width: 100%;
     text-align: center;
-    margin: 0;
+    margin: {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+    }
     color: $page_brighter_color;
 
     h1.page_title {
-        font-size: 1.8em;
+        font-size: 1.8rem;
         margin: 0;
         padding: 10px;
     }
@@ -24,20 +34,39 @@ div.div_header {
 ol.main_nav {
     margin: 0;
     padding: 0;
-    
-    > li {
     list-style: none;
-    margin: 10px;
-    background: $dark_background_color;
-    text-align: center;
-    padding-bottom: 24px;
-    font-size: 2em;
-        > a {
-            @extend %anchor;
+    
+    a {
+        @extend %anchor;
+        margin: 10px;
+        background: $dark_background_color;
+        text-align: center;
+        padding: {
+            top: 24px;
+            bottom: 24px;
+        }
+        font-size: 2rem;
         
-            > i {
+        &.menu_contact {
+            background: #010101;
+            color: $page_brighter_color;
+            height: 120px;
+            
+            i {
+                padding: {
+                    top: 4px;
+                    bottom: 2px;
+                }
+            }
+            p.menu_option {
+                margin-bottom: 10px;
+            }
+            }
+        
+        
+        i {
                 color: $page_brighter_color;
-                font-size: 2.8em;
+                font-size: 2.8rem;
                 display: block;
                 margin: {
                     left: auto;
@@ -49,12 +78,13 @@ ol.main_nav {
                 }
             }
         }
-    }      
-}
+    }
+            
 
-div.div_contact {
+
+div.footer_author {
     @extend div.div_header;
-    font-size: 1.8em;
+    font-size: .6rem;
     margin: 0;
     padding: 10px;
 }
@@ -72,53 +102,78 @@ div.div_contact {
             position: absolute;
             bottom: 0;
             right: 20%;
-            font-size: 2.8em;
+            font-size: 2.8rem;
         }
     }
     
     ol.main_nav {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
         margin: {
-            top: -120px;
             left: auto;
             right: auto;
         }
-        width: 90%;
-        position: relative;
+        padding: {
+            top: 4rem;
+            bottom: 4rem;
+        } 
+        align-items: center;
+        justify-content: center;
         
         
-        > li {
+        > a {
             width: 450px;
             height: 200px;
             @include rotate(6deg);
-            position: absolute;
-            > a {
-               @include rotate(-6deg);
-                > i {
-                   
+            transition: background .6s linear .1s;
+            
+            &.menu_contact {
+                align-self: flex-end;
+                width: 86%;
+                margin: {
+                    left: 1.5rem;
+                    right: 3rem;
+                    top: 4rem;
+                    bottom: 8rem;
                 }
-        }
+                
+                &:hover {
+                    height: 120px;
+                    font-size: 3.2rem;
+                    letter-spacing: .4rem;
+                    color: #010101;
+                    
+                    p.menu_option {
+                        margin: 42px;
+                    }
+                }
+            }
+            
+            &:hover {
+                background: $bright_color;
+                color: $dark_background_color;
+                font-size: 3rem;
+                font-weight: 700;
+                height: 200px;
+                i {
+                   display: none;
+                }
+                
+                p.menu_option {
+                    margin: 56px;
+                }
+            
+            }
+             
     }      
 }
     
-    $total_li: 6;
-    $start: 2px;
-    $step: 120px;
-    
-    @for $i from 1 through $total_li {
-        .main_nav>li:nth-child(#{$i}) {
-            
-            top: ($start + $step) * $i;
-            
-            @if($i % 2 == 0) {
-                right: 14%;
-            } @else {
-                left: 14%;
-            }
+    div.footer_author {
+        text-align: left;
+        margin: {
+            bottom: -150px;
+            left: -16px;
         }
-    }
-    
-    div.div_contact {
-        display: none;
+        padding-left: 2rem;
     }
 }

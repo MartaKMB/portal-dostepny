@@ -1,28 +1,31 @@
-ol.main_nav > li > a { display: block; text-decoration: none; color: #f7f703; }
-ol.main_nav > li > a:hover { text-decoration: underline; }
+ol.main_nav a { display: block; text-decoration: none; color: #f7f703; }
 
-body { margin: 0; padding: 0; font-family: "Lato", sans-serif; letter-spacing: 0.2em; background: #fffff3; }
+body { margin: 0; padding: 0; font-family: "Lato", sans-serif; letter-spacing: 0.2rem; background: #fffff3; box-sizing: border-box; }
 
-div.div_header, div.div_contact { background: #c60271; width: 100%; text-align: center; margin: 0; color: #fffff3; }
-div.div_header h1.page_title, div.div_contact h1.page_title { font-size: 1.8em; margin: 0; padding: 10px; }
+div#page_container { overflow: hidden; }
 
-ol.main_nav { margin: 0; padding: 0; }
-ol.main_nav > li { list-style: none; margin: 10px; background: #200185; text-align: center; padding-bottom: 24px; font-size: 2em; }
-ol.main_nav > li > a > i { color: #fffff3; font-size: 2.8em; display: block; margin-left: auto; margin-right: auto; padding-top: 20px; padding-bottom: 24px; }
+div.div_header, div.footer_author { background: #c60271; width: 100%; text-align: center; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 20px; color: #fffff3; }
+div.div_header h1.page_title, div.footer_author h1.page_title { font-size: 1.8rem; margin: 0; padding: 10px; }
 
-div.div_contact { font-size: 1.8em; margin: 0; padding: 10px; }
+ol.main_nav { margin: 0; padding: 0; list-style: none; }
+ol.main_nav a { margin: 10px; background: #200185; text-align: center; padding-top: 24px; padding-bottom: 24px; font-size: 2rem; }
+ol.main_nav a.menu_contact { background: #010101; color: #fffff3; height: 120px; }
+ol.main_nav a.menu_contact i { padding-top: 4px; padding-bottom: 2px; }
+ol.main_nav a.menu_contact p.menu_option { margin-bottom: 10px; }
+ol.main_nav a i { color: #fffff3; font-size: 2.8rem; display: block; margin-left: auto; margin-right: auto; padding-top: 20px; padding-bottom: 24px; }
 
-@media only screen and (min-width: 768px) { div.div_header, div.div_contact { text-align: right; -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); min-width: 120%; min-height: 200px; margin-top: -100px; position: relative; }
-  div.div_header h1.page_title, div.div_contact h1.page_title { position: absolute; bottom: 0; right: 20%; font-size: 2.8em; }
-  ol.main_nav { display: block; margin-top: -120px; margin-left: auto; margin-right: auto; width: 90%; position: relative; }
-  ol.main_nav > li { width: 450px; height: 200px; -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); position: absolute; }
-  ol.main_nav > li > a { -ms-transform: rotate(-6deg); -webkit-transform: rotate(-6deg); transform: rotate(-6deg); }
-  .main_nav > li:nth-child(1) { top: 122px; left: 14%; }
-  .main_nav > li:nth-child(2) { top: 244px; right: 14%; }
-  .main_nav > li:nth-child(3) { top: 366px; left: 14%; }
-  .main_nav > li:nth-child(4) { top: 488px; right: 14%; }
-  .main_nav > li:nth-child(5) { top: 610px; left: 14%; }
-  .main_nav > li:nth-child(6) { top: 732px; right: 14%; }
-  div.div_contact { display: none; } }
+div.footer_author { font-size: .6rem; margin: 0; padding: 10px; }
+
+@media only screen and (min-width: 768px) { div.div_header, div.footer_author { text-align: right; -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); min-width: 120%; min-height: 200px; margin-top: -100px; position: relative; }
+  div.div_header h1.page_title, div.footer_author h1.page_title { position: absolute; bottom: 0; right: 20%; font-size: 2.8rem; }
+  ol.main_nav { display: flex; flex-wrap: wrap; margin-left: auto; margin-right: auto; padding-top: 4rem; padding-bottom: 4rem; align-items: center; justify-content: center; }
+  ol.main_nav > a { width: 450px; height: 200px; -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); transition: background .6s linear .1s; }
+  ol.main_nav > a.menu_contact { align-self: flex-end; width: 86%; margin-left: 1.5rem; margin-right: 3rem; margin-top: 4rem; margin-bottom: 8rem; }
+  ol.main_nav > a.menu_contact:hover { height: 120px; font-size: 3.2rem; letter-spacing: .4rem; color: #010101; }
+  ol.main_nav > a.menu_contact:hover p.menu_option { margin: 42px; }
+  ol.main_nav > a:hover { background: #f7f703; color: #200185; font-size: 3rem; font-weight: 700; height: 200px; }
+  ol.main_nav > a:hover i { display: none; }
+  ol.main_nav > a:hover p.menu_option { margin: 56px; }
+  div.footer_author { text-align: left; margin-bottom: -150px; margin-left: -16px; padding-left: 2rem; } }
 
 /*# sourceMappingURL=main.css.map */
