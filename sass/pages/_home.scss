@@ -19,14 +19,14 @@ div.div_header {
         top: 0;
         left: 0;
         right: 0;
-        bottom: 20px;
+        bottom: 2rem;
     }
     color: $page_brighter_color;
 
     h1.page_title {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         margin: 0;
-        padding: 10px;
+        padding: 1.6rem;
     }
 }
 
@@ -38,55 +38,60 @@ ol.main_nav {
     
     a {
         @extend %anchor;
-        margin: 10px;
+        margin: 1.6rem;
         background: $dark_background_color;
         text-align: center;
         padding: {
-            top: 24px;
-            bottom: 24px;
+            top: 2rem;
+            bottom: 2rem;
         }
-        font-size: 2rem;
+        font-size: 3rem;
         
         &.menu_contact {
             background: #010101;
             color: $page_brighter_color;
-            height: 120px;
+            height: 16rem;
             
             i {
                 padding: {
-                    top: 4px;
-                    bottom: 2px;
+                    top: .8rem;
+                    bottom: .8rem;
                 }
             }
             p.menu_option {
-                margin-bottom: 10px;
+                margin-bottom: 1.2rem;
             }
             }
         
         
         i {
                 color: $page_brighter_color;
-                font-size: 2.8rem;
+                font-size: 7rem;
                 display: block;
                 margin: {
                     left: auto;
                     right: auto;
                 }
                 padding: {
-                    top: 20px;
-                    bottom: 24px;
+                    top: 2rem;
+                    bottom: 2.2rem;
                 }
             }
         }
     }
             
 
-
 div.footer_author {
     @extend div.div_header;
-    font-size: .6rem;
+    font-size: .8rem;
     margin: 0;
-    padding: 10px;
+    padding: 1.2rem;
+    
+    a {
+        @extend %anchor;
+        display: inline-block;
+        text-decoration: underline;
+    }
 }
 
 @media only screen and (min-width: $breakpoint_destkop) {
@@ -94,15 +99,15 @@ div.footer_author {
         text-align: right;
         @include rotate(6deg);
         min-width: 120%;
-        min-height: 200px;
-        margin-top: -100px;
+        min-height: 18rem;
+        margin-top: -10rem;
         position: relative;
 
         h1.page_title {
             position: absolute;
             bottom: 0;
             right: 20%;
-            font-size: 2.8rem;
+            font-size: 3rem;
         }
     }
     
@@ -121,59 +126,67 @@ div.footer_author {
         justify-content: center;
         
         
-        > a {
-            width: 450px;
-            height: 200px;
+        a {
+            width: 38rem;
+            height: 28rem;
             @include rotate(6deg);
-            transition: background .6s linear .1s;
+            transition: background .4s linear .1s;
+            font-size: 3.8rem;
             
-            &.menu_contact {
-                align-self: flex-end;
-                width: 86%;
-                margin: {
-                    left: 1.5rem;
-                    right: 3rem;
-                    top: 4rem;
-                    bottom: 8rem;
+                i {
+                    font-size: 9rem;
                 }
-                
-                &:hover {
-                    height: 120px;
-                    font-size: 3.2rem;
-                    letter-spacing: .4rem;
-                    color: #010101;
+
+                &.menu_contact {
+                    align-self: flex-end;
+                    width: 76rem;
+                    margin: {
+                        left: 1.5rem;
+                        right: 3.5rem;
+                        top: 4rem;
+                        bottom: 8rem;
+                    }
+                    
+                    i {
+                        display: inline-block;
+                    }
                     
                     p.menu_option {
-                        margin: 42px;
+                            display: inline-block;
                     }
+
+                &:hover {
+                    height: 16rem;
+                    font-size: 8rem;
+                    letter-spacing: .4rem;
+                    color: #010101;
+
+                    //p.menu_option {
+                        //margin: 42px;
+                    //}
                 }
             }
             
             &:hover {
                 background: $bright_color;
                 color: $dark_background_color;
-                font-size: 3rem;
+                font-size: 5.9rem;
                 font-weight: 700;
-                height: 200px;
+                height: 28rem;
+                    
                 i {
                    display: none;
                 }
-                
-                p.menu_option {
-                    margin: 56px;
-                }
-            
             }
-             
     }      
 }
     
     div.footer_author {
         text-align: left;
         margin: {
-            bottom: -150px;
-            left: -16px;
+            bottom: -13rem;
+            left: -14rem;
         }
-        padding-left: 2rem;
+        padding-left: 15rem;
     }
 }
