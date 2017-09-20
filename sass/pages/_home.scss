@@ -8,19 +8,26 @@ body{
     
 }
 #menu{
-    background: url(../img/bg.jpg);
-    background-size: 900px 1000px;
-    background-repeat: no-repeat;
+   // background: url(../img/bg.jpg);
+    
+
+    background:{
+    image: url(../img/bgglasses.png);
+    size: 1000px 1000px;
+    position: center;
+    repeat: no-repeat;
+    } 
 
     z-index: 20;
     position:relative;
+    display: flex;
     width:900px;
     height:900px;
     border-radius: 50%;
     margin:{
         left:auto;
         right: auto;
-        top: 100px;
+        top: 60px;
         bottom: 60px;
 }
     } 
@@ -51,30 +58,30 @@ body{
 }
 .overlayFundaction {
   @extend .overlay;
-  top: -10%;
-  left: 5%;
+  top: -5%;
+  left: 10%;
 
 }
 .fundactions{
-    top:-10%;
-    left:5%;
+    top: -5%;
+    left: 10%;
 }
 .overlayApp {
   @extend .overlay;    
-  top: -10%;
-  right: 5%;
+  top: -5%;
+  right: 10%;
 }
 .singleImg:hover .overlayApp {
    @include hoverImg;
 }
 .applications{
-    top:-10%;
-    right:5%;
+    top: -5%;
+    right: 10%;
 }
 .overlayPlaces {
   @extend .overlay;    
   top: 30%;
-  left: -25%;
+  left: -15%;
 }
 .singleImg:hover .overlayPlaces {
    @include hoverImg;
@@ -82,47 +89,72 @@ body{
 
 .friendlyPlaces{
     top:30%;
-    left:-25%;
+    left:-15%;
 }
 
 .overlayArticles {
   @extend .overlay;    
   top: 30%;
-  right: -25%;
+  right: -15%;
 }
 .singleImg:hover .overlayArticles {
    @include hoverImg;
 }
 .articles{
     top:30%;
-    right:-25%;
+    right:-15%;
 }
 .overlayAnimals {
   @extend .overlay;    
   bottom: -10%;
-  left: 5%;
+  left: 10%;
 }
 .singleImg:hover .overlayAnimals {
    @include hoverImg;
 }
 .animals{
     bottom:-10%;
-    left:5%;
+    left:10%;
 }
 .overlayLaw {
   @extend .overlay;    
   bottom: -10%;
-  right: 5%;
+  right: 10%;
 }
 .singleImg:hover .overlayLaw {
    @include hoverImg;
 }
 .law{
     bottom: -10%;
-    right: 5%;
+    right: 10%;
+}
+.contact{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 85%;
+    left:95%;
+    &:hover{
+        background: #ffff00;
+        border-radius: 50%;
+    }
 }
 h1{
     display: none;
+}
+@media only screen and (max-width: 1280px){
+    #menu{
+    background: url(../img/bg5.jpg);
+    width:700px;
+    height:700px;
+    }
+    .fundactions, .overlayFundaction, .applications, .overlayApp, .articles, .overlayArticles, .friendlyPlaces, .overlayPlaces, .animals, .overlayAnimals, .law, .overlayLaw{
+        width: 300px;
+        height: 300px;
+    }
+      .text{
+        font-size: 40px;
+    }
 }
 @media only screen and (max-width: 1024px) {
     h1{
@@ -130,7 +162,11 @@ h1{
         text-align: center;
         font-weight: bold;
         display: block;
-        top:0;
+        margin-top: -40px;
+        color: #990000;
+        span{
+            color: #000;
+        }
     }
     #menu {
     background: url(../img/concrete_seamless.png);
@@ -176,3 +212,4 @@ h1{
 
     }
 }
+
