@@ -3,9 +3,11 @@ ol.main_nav a, div.footer_author a { display: block; text-decoration: none; colo
 *:focus { border: 10px solid red; }
 
 a { position: relative; }
-a:hover .read_next { top: 15; left: 15rem; }
-a .read_next { background: #1a0061; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #4c2bad, #1a0061); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #4c2bad, #1a0061); /* Standard syntax */ color: #fbfe28; font-family: "Lato", sans-serif; width: 25rem; height: 6rem; font-size: 4rem; font-weight: bold; position: absolute; top: 23rem; left: -150rem; }
-a .read_next:focus { top: 23rem; left: 15rem; }
+a:focus .read_next, a:hover .read_next { top: 23rem; left: 15rem; }
+
+.read_next { background: #1a0061; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #4c2bad, #1a0061); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #4c2bad, #1a0061); /* Standard syntax */ color: #fbfe28; font-family: "Lato", sans-serif; width: 25rem; height: 6rem; font-size: 4rem; font-weight: bold; position: absolute; top: 23rem; left: -150rem; }
+.read_next:focus { top: 23rem; left: 15rem; }
+.test { background: #000; }
 
 body { margin: 0; padding: 0; font-family: "Lato", sans-serif; letter-spacing: 0.2rem; background: #feffda; box-sizing: border-box; }
 
@@ -35,10 +37,10 @@ div.footer_author a { display: inline-block; text-decoration: underline; }
   ol.main_nav a.menu_contact { align-self: flex-end; width: 76rem; height: 16rem; margin-left: 1.5rem; margin-right: 3.5rem; margin-top: 4rem; margin-bottom: 1.5rem; }
   ol.main_nav a.menu_contact i { display: inline-block; }
   ol.main_nav a.menu_contact div.menu_option { display: inline-block; vertical-align: super; }
-  ol.main_nav a.menu_contact:hover { height: 16rem; font-size: 8rem; letter-spacing: .4rem; color: #010101; }
-  ol.main_nav a.menu_contact:hover div.menu_option { margin-top: 2.4rem; }
-  ol.main_nav a:hover { background: #fbfe28; color: #1a0061; font-size: 5.9rem; font-weight: 700; height: 28rem; }
-  ol.main_nav a:hover i { display: none; }
+  ol.main_nav a.menu_contact:hover, ol.main_nav a.menu_contact:focus { height: 16rem; font-size: 8rem; letter-spacing: .4rem; color: #010101; }
+  ol.main_nav a.menu_contact:hover div.menu_option, ol.main_nav a.menu_contact:focus div.menu_option { margin-top: 2.4rem; }
+  ol.main_nav a:hover, ol.main_nav a:focus { background: #fbfe28; color: #1a0061; font-size: 5.9rem; font-weight: 700; height: 28rem; }
+  ol.main_nav a:hover i, ol.main_nav a:focus i { display: none; }
   div.footer_author { text-align: left; margin-top: .5rem; margin-bottom: -13rem; margin-left: -14rem; padding-left: 15rem; } }
 
 /*# sourceMappingURL=main.css.map */

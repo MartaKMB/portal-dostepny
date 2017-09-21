@@ -1,15 +1,10 @@
-*:focus{
-    border: 10px solid red;
-      } 
-
-
 a{
     position:relative;
-     &:hover .read_next{
-            top: 15;
+      &:focus .read_next, &:hover .read_next {
+            top: 23rem;    
             left: 15rem;  
             }
-   
+}
     .read_next{  
     @include gradient_diagonal($dark_background_color_start, $dark_background_color);
     color: $bright_color;
@@ -18,14 +13,21 @@ a{
     height: 6rem;
     font:{
         size: 4rem;
-        weight: bold
+        weight: bold;
         }
     position: absolute;
     top: 23rem;
     left: -150rem;    
+        
     &:focus {
         top: 23rem;
         left: 15rem;  
+        @at-root{ 
+            .test {
+            background: #000; 
         }
-}
-}
+        } 
+        }
+}  
+
+    

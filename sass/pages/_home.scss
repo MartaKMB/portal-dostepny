@@ -184,7 +184,7 @@ div.footer_author {
                         vertical-align:super;
                     }
 
-                &:hover {
+                &:hover, &:focus  {
                     height: 16rem;
                     font-size: 8rem;
                     letter-spacing: .4rem;
@@ -196,7 +196,7 @@ div.footer_author {
                 }
             }
             
-            &:hover {
+            &:hover, &:focus  {
                 background: $bright_color;
                 color: $dark_background_color;
                 font-size: 5.9rem;
