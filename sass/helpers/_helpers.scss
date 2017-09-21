@@ -1,7 +1,12 @@
-$page_brighter_color: rgb(255, 255, 243);
-$dark_background_color: rgb(32, 1, 133);
-$bright_color: rgb(247, 247, 3);
-$dark_highlight_color: rgb(198, 2, 113);
+$page_brighter_color: rgb(253, 255, 137);
+
+$dark_background_color_start: rgb(76, 43, 173);
+$dark_background_color: rgb(26, 0, 97);
+
+$bright_color: rgb(251, 254, 40);
+
+$dark_highlight_color_start: rgb(204, 31, 125);
+$dark_highlight_color: rgb(171, 0, 93);
 
 $breakpoint_destkop: 768px; 
 
@@ -23,4 +28,12 @@ $font: 'Lato', sans-serif;
     display: block;
     text-decoration: none;
     color: $bright_color;
+}
+
+@mixin gradient_diagonal($start_color, $end_color) {
+    background: $end_color; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, $start_color, $end_color); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, $start_color, $end_color); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, $start_color, $end_color); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, $start_color, $end_color); /* Standard syntax */
 }

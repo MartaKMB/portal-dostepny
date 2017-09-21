@@ -1,33 +1,37 @@
-ol.main_nav a, div.footer_author a { display: block; text-decoration: none; color: #f7f703; }
+ol.main_nav a, div.footer_author a { display: block; text-decoration: none; color: #fbfe28; }
 
-body { margin: 0; padding: 0; font-family: "Lato", sans-serif; letter-spacing: 0.2rem; background: #fffff3; box-sizing: border-box; }
+body { margin: 0; padding: 0; font-family: "Lato", sans-serif; letter-spacing: 0.2rem; background: #fdff89; box-sizing: border-box; }
 
 div#page_container { overflow: hidden; }
 
-div.div_header, div.footer_author { background: #c60271; width: 100%; text-align: center; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 2rem; color: #fffff3; }
+div.div_header, div.footer_author { background: #ab005d; background: #ab005d; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #cc1f7d, #ab005d); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #cc1f7d, #ab005d); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #cc1f7d, #ab005d); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #cc1f7d, #ab005d); /* Standard syntax */ width: 100%; text-align: center; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 2rem; color: #fdff89; }
 div.div_header h1.page_title, div.footer_author h1.page_title { font-size: 2.2rem; margin: 0; padding: 1.6rem; }
 
+div#about { width: 90%; margin-top: 1rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto; font-size: 2rem; font-weight: 600; color: #ab005d; }
+
 ol.main_nav { margin: 0; padding: 0; list-style: none; }
-ol.main_nav a { margin: 1.6rem; background: #200185; text-align: center; padding-top: 2rem; padding-bottom: 2rem; font-size: 3rem; }
-ol.main_nav a.menu_contact { background: #010101; color: #fffff3; height: 16rem; }
+ol.main_nav a { margin: 1.6rem; background: #1a0061; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #4c2bad, #1a0061); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #4c2bad, #1a0061); /* Standard syntax */ box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.2), 2px 8px 22px 0 rgba(0, 0, 0, 0.19); text-align: center; padding-top: 2rem; padding-bottom: 2rem; font-size: 3rem; border-radius: 1%; }
+ol.main_nav a.menu_contact { background: #010101; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #222222, #010101); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #222222, #010101); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #222222, #010101); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #222222, #010101); /* Standard syntax */ color: #fdff89; height: 16rem; }
 ol.main_nav a.menu_contact i { padding-top: .8rem; padding-bottom: .8rem; }
-ol.main_nav a.menu_contact p.menu_option { margin-bottom: 1.2rem; }
-ol.main_nav a i { color: #fffff3; font-size: 7rem; display: block; margin-left: auto; margin-right: auto; padding-top: 2rem; padding-bottom: 2.2rem; }
+ol.main_nav a.menu_contact div.menu_option { margin-bottom: 1.2rem; }
+ol.main_nav a i { color: #fdff89; font-size: 7.4rem; display: block; margin-left: auto; margin-right: auto; padding-top: 2rem; padding-bottom: 2.2rem; text-shadow: 4px 8px 12px rgba(0, 0, 0, 0.2); }
 
 div.footer_author { font-size: .8rem; margin: 0; padding: 1.2rem; }
 div.footer_author a { display: inline-block; text-decoration: underline; }
 
 @media only screen and (min-width: 768px) { div.div_header, div.footer_author { text-align: right; -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); min-width: 120%; min-height: 18rem; margin-top: -10rem; position: relative; }
   div.div_header h1.page_title, div.footer_author h1.page_title { position: absolute; bottom: 0; right: 20%; font-size: 3rem; }
+  div#about { -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); margin-top: -2rem; margin-bottom: .4rem; margin-left: 4rem; text-align: center; }
   ol.main_nav { display: flex; flex-wrap: wrap; margin-left: auto; margin-right: auto; padding-top: 4rem; padding-bottom: 4rem; align-items: center; justify-content: center; }
   ol.main_nav a { width: 38rem; height: 28rem; -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); transition: background .4s linear .1s; font-size: 3.8rem; }
   ol.main_nav a i { font-size: 9rem; }
-  ol.main_nav a.menu_contact { align-self: flex-end; width: 76rem; margin-left: 1.5rem; margin-right: 3.5rem; margin-top: 4rem; margin-bottom: 8rem; }
+  ol.main_nav a.menu_contact { align-self: flex-end; width: 76rem; height: 16rem; margin-left: 1.5rem; margin-right: 3.5rem; margin-top: 4rem; margin-bottom: 1.5rem; }
   ol.main_nav a.menu_contact i { display: inline-block; }
-  ol.main_nav a.menu_contact p.menu_option { display: inline-block; }
+  ol.main_nav a.menu_contact div.menu_option { display: inline-block; vertical-align: super; }
   ol.main_nav a.menu_contact:hover { height: 16rem; font-size: 8rem; letter-spacing: .4rem; color: #010101; }
-  ol.main_nav a:hover { background: #f7f703; color: #200185; font-size: 5.9rem; font-weight: 700; height: 28rem; }
+  ol.main_nav a.menu_contact:hover div.menu_option { margin-top: 2.4rem; }
+  ol.main_nav a:hover { background: #fbfe28; color: #1a0061; font-size: 5.9rem; font-weight: 700; height: 28rem; }
   ol.main_nav a:hover i { display: none; }
-  div.footer_author { text-align: left; margin-bottom: -13rem; margin-left: -14rem; padding-left: 15rem; } }
+  div.footer_author { text-align: left; margin-top: .5rem; margin-bottom: -13rem; margin-left: -14rem; padding-left: 15rem; } }
 
 /*# sourceMappingURL=main.css.map */
