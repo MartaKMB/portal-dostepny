@@ -30,6 +30,10 @@ $font: 'Lato', sans-serif;
     color: $bright_color;
 }
 
+*:focus{
+     border: 5px solid $dark_highlight_color;
+      } 
+
 @mixin gradient_diagonal($start_color, $end_color) {
     background: $end_color; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left top, $start_color, $end_color); /* For Safari 5.1 to 6.0 */
