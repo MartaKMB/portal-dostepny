@@ -41,6 +41,8 @@ div.page_localization {
             font-size: 2rem;
             bottom: -2rem;
             left: 2rem;
+            transition: background .4s linear .1s;
+            transition: color .4s linear .1s;
             
             &:hover {
                 color: #010101;
@@ -53,11 +55,13 @@ div.page_localization {
     div.page_localization {
         @include rotate(6deg);
         margin: {
-            left: 30rem;
+            left: 34rem;
             top: 0;
         }
         
         a.localization_link {
+            transition: background .4s linear .1s;
+            font-size: 1.4rem;
             &:hover {
                 color: #010101;
                 background: $bright_color;

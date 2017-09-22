@@ -6,9 +6,10 @@ div.div_header a.go_to_content, div.footer_author a.go_to_content { height: 1rem
 div.page_localization { margin-top: 3rem; margin-bottom: 3rem; margin-left: .8rem; }
 div.page_localization a.localization_link { color: #101010; font-weight: 600; }
 
-@media only screen and (min-width: 768px) { div.div_header a.go_to_content, div.footer_author a.go_to_content { height: 2rem; width: 26rem; font-size: 2rem; bottom: -2rem; left: 2rem; }
+@media only screen and (min-width: 768px) { div.div_header a.go_to_content, div.footer_author a.go_to_content { height: 2rem; width: 26rem; font-size: 2rem; bottom: -2rem; left: 2rem; transition: background .4s linear .1s; transition: color .4s linear .1s; }
   div.div_header a.go_to_content:hover, div.footer_author a.go_to_content:hover { color: #010101; background: #fbfe28; font-weight: 700; }
-  div.page_localization { -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); margin-left: 30rem; margin-top: 0; }
+  div.page_localization { -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); margin-left: 34rem; margin-top: 0; }
+  div.page_localization a.localization_link { transition: background .4s linear .1s; font-size: 1.4rem; }
   div.page_localization a.localization_link:hover { color: #010101; background: #fbfe28; } }
 body { margin: 0; padding: 0; font-family: "Lato", sans-serif; letter-spacing: 0.2rem; background: #feffda; box-sizing: border-box; }
 
