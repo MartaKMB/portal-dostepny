@@ -1,0 +1,72 @@
+div.div_header {
+    
+    position: relative;
+    
+    a.go_to_content {
+        @extend %anchor;
+        height: 1rem;
+        width: 14rem;
+        font-size: 1rem;
+        text-align: center;
+        padding: .8rem;
+        position: absolute;
+        bottom: -2rem;
+        left: .8rem;
+        @include gradient_diagonal(#222222, #010101);
+        color: $page_brighter_color;
+        box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.2), 2px 8px 22px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+div.page_localization {
+    margin: {
+        top: 3rem;
+        bottom: 3rem;
+        left: .8rem;
+    } 
+    
+    a.localization_link {
+        color: #101010;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: $breakpoint_destkop) {
+    
+    div.div_header {
+    
+        a.go_to_content {
+            height: 2rem;
+            width: 26rem;
+            font-size: 2rem;
+            bottom: -2rem;
+            left: 2rem;
+            transition: background .4s linear .1s;
+            transition: color .4s linear .1s;
+            
+            &:hover {
+                color: #010101;
+                background: $bright_color;
+                font-weight: 700;
+            }
+        }
+    }
+    
+    div.page_localization {
+        @include rotate(6deg);
+        margin: {
+            left: 34rem;
+            top: 0;
+        }
+        
+        a.localization_link {
+            transition: background .4s linear .1s;
+            font-size: 1.4rem;
+            &:hover {
+                color: #010101;
+                background: $bright_color;
+            }
+        }
+    }
+}
+
