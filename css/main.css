@@ -1,14 +1,25 @@
 ol.main_nav a, div.footer_author a { display: block; text-decoration: none; color: #fbfe28; }
 
-*:focus { border: 10px solid red; }
+*:focus { border: 5px solid #ab005d; }
 
-a { position: relative; }
+a { position: relative; color: #000; }
 a:focus .read_next, a:hover .read_next { top: 23rem; left: 15rem; }
 
 .read_next { background: #1a0061; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #4c2bad, #1a0061); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #4c2bad, #1a0061); /* Standard syntax */ color: #fbfe28; font-family: "Lato", sans-serif; width: 25rem; height: 6rem; font-size: 4rem; font-weight: bold; position: absolute; top: 23rem; left: -150rem; }
 .read_next:focus { top: 23rem; left: 15rem; }
-.test { background: #000; }
 
+.line { border-top: 2px dashed #ab005d; width: 100%; }
+
+.article { position: relative; width: 80%; font-size: 1.5rem; margin-left: auto; margin-right: auto; }
+
+#after_article { margin-top: 1.5rem; margin-bottom: 1.5rem; }
+#after_article > a { font-style: italic; }
+#after_article > a:focus { background: #ffff00; }
+
+h2 { z-index: 2; width: 100%; font-size: 2.8rem; background: #1a0061; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #4c2bad, #1a0061); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #4c2bad, #1a0061); /* Standard syntax */ box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.2), 2px 8px 22px 0 rgba(0, 0, 0, 0.19); color: #ffff00; text-align: center; padding-right: 1%; padding-left: 1%; }
+
+@media only screen and (min-width: 768px) { .article { font-size: 2.2rem; width: 70%; }
+  h2 { text-align: right; font-size: 3rem; margin-right: 70%; margin-left: -50%; padding-right: 5%; padding-top: 1.5%; padding-bottom: 1.5%; transform: skewX(-6deg); } }
 body { margin: 0; padding: 0; font-family: "Lato", sans-serif; letter-spacing: 0.2rem; background: #feffda; box-sizing: border-box; }
 
 div#page_container { overflow: hidden; }
@@ -42,5 +53,6 @@ div.footer_author a { display: inline-block; text-decoration: underline; }
   ol.main_nav a:hover, ol.main_nav a:focus { background: #fbfe28; color: #1a0061; font-size: 5.9rem; font-weight: 700; height: 28rem; }
   ol.main_nav a:hover i, ol.main_nav a:focus i { display: none; }
   div.footer_author { text-align: left; margin-top: .5rem; margin-bottom: -13rem; margin-left: -14rem; padding-left: 15rem; } }
+#after_article margin { top: 20px; bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -31,7 +31,7 @@ $font: 'Lato', sans-serif;
 }
 
 *:focus{
-    border: 10px solid red;
+     border: 5px solid $dark_highlight_color;
       } 
 
 @mixin gradient_diagonal($start_color, $end_color) {
