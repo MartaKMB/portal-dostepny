@@ -1,4 +1,5 @@
 
+
 div.div_header a.go_to_content, div.footer_author a.go_to_content, div.footer_single_page div.footer_nav ul li a, div.footer_single_page div.site_by a, ol.main_nav a, div.footer_author a { display: block; text-decoration: none; color: #fbfe28; }
 
 div.div_header, div.footer_author { position: relative; }
@@ -33,6 +34,15 @@ ol.main_nav a, div.footer_author a { display: block; text-decoration: none; colo
 
 a { position: relative; color: #000; }
 a:focus .read_next, a:hover .read_next { top: 23rem; left: 15rem; }
+
+
+ol.main_nav a, div.footer_author a { display: block; text-decoration: none; color: #fbfe28; }
+
+*:focus { border: 5px solid #ab005d; }
+
+a { position: relative; color: #000; }
+a:focus .read_next, a:hover .read_next { top: 23rem; left: 15rem; }
+
 
 .read_next { background: #1a0061; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #4c2bad, #1a0061); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #4c2bad, #1a0061); /* Standard syntax */ color: #fbfe28; font-family: "Lato", sans-serif; width: 25rem; height: 6rem; font-size: 4rem; font-weight: bold; position: absolute; top: 23rem; left: -150rem; }
 .read_next:focus { top: 23rem; left: 15rem; }
