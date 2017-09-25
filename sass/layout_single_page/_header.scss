@@ -39,8 +39,8 @@ div.page_localization {
             height: 2rem;
             width: 26rem;
             font-size: 2rem;
-            bottom: -2rem;
-            left: 2rem;
+            bottom: -2.4rem;
+            left: 8.6rem;
             transition: background .4s linear .1s;
             transition: color .4s linear .1s;
             
@@ -55,7 +55,7 @@ div.page_localization {
     div.page_localization {
         @include rotate(6deg);
         margin: {
-            left: 34rem;
+            left: 38rem;
             top: 0;
         }
         

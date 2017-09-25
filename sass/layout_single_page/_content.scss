@@ -1,37 +1,24 @@
 a{
     position:relative;
     color: #000;
-      &:focus .read_next, &:hover .read_next {
-            top: 23rem;    
-            left: 15rem;  
-            }
-}
-    .read_next{  
-    @include gradient_diagonal($dark_background_color_start, $dark_background_color);
-    color: $bright_color;
-    font-family: $font;
-    width: 25rem;
-    height: 6rem;
-//    border: 5px solid $dark_highlight_color;    
-    font:{
-        size: 4rem;
-        weight: bold;
-        }
-    position: absolute;
-    top: 23rem;
-    left: -150rem;    
-        
-    &:focus {
+    
+    &:focus .read_next, &:hover .read_next {
         top: 23rem;    
         left: 15rem;  
-        }
-}  
+    }
+}
 
 
+// made invisible for mobile
+.read_next{
+    display: none;
+}
+   
 .line{
     border-top: 2px dashed $dark_highlight_color;
     width: 100%;
 }
+
 .article{
     position: relative;
     width:80%;
@@ -42,14 +29,12 @@ a{
     }
 }
 
-#after_article {
+// change from id to class
+.after_article {
     >a{
         font-style: italic;
-            &:focus, &:hover {
-        background: #ffff00;
-    }
-    }
-    
+            
+    } 
     margin:{
      top: 1.5rem;
      bottom: 1.5rem;           
@@ -77,13 +62,37 @@ h2{
         font-size: 1.5rem;
         width: 70%;
     }
+    
+    // 'czytaj dalej' visible only for desktop
+     .read_next{  
+         display: block;
+        @include gradient_diagonal($dark_background_color_start, $dark_background_color);
+        color: $bright_color;
+        font-family: $font;
+        width: 25rem;
+        height: 6rem;
+        //    border: 5px solid $dark_highlight_color;    
+        font:{
+            size: 4rem;
+            weight: bold;
+            }
+        position: absolute;
+        top: 23rem;
+        left: -150rem;    
+
+        &:focus {
+            top: 23rem;    
+            left: 15rem;  
+        }
+    }  
+    
     h2{
     text-align: right;
     font-size: 2.5rem;     
     margin:{
         right:70%;
         left: -50%;
-            }
+    }
     padding:{
         right: 5%;
         top: 1.5%;
@@ -92,4 +101,11 @@ h2{
      transform: skewX(-6deg); 
     }
     
+    .after_article {
+        >a{
+            &:focus, &:hover {
+            background: #ffff00;
+            }
+        }
+    }
 }

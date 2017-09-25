@@ -1,6 +1,6 @@
+div.div_header a.go_to_content, div.footer_author a.go_to_content, div.footer_single_page div.footer_nav ul li a, div.footer_single_page div.site_by a, ul.main_nav a, div.footer_author a { display: block; text-decoration: none; color: #fbfe28; }
 
-
-div.div_header a.go_to_content, div.footer_author a.go_to_content, div.footer_single_page div.footer_nav ul li a, div.footer_single_page div.site_by a, ol.main_nav a, div.footer_author a { display: block; text-decoration: none; color: #fbfe28; }
+*:focus { border: 5px solid #ab005d; }
 
 div.div_header, div.footer_author { position: relative; }
 div.div_header a.go_to_content, div.footer_author a.go_to_content { height: 1rem; width: 14rem; font-size: 1rem; text-align: center; padding: .8rem; position: absolute; bottom: -2rem; left: .8rem; background: #010101; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #222222, #010101); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #222222, #010101); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #222222, #010101); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #222222, #010101); /* Standard syntax */ color: #feffda; box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.2), 2px 8px 22px 0 rgba(0, 0, 0, 0.19); }
@@ -8,76 +8,30 @@ div.div_header a.go_to_content, div.footer_author a.go_to_content { height: 1rem
 div.page_localization { margin-top: 3rem; margin-bottom: 3rem; margin-left: .8rem; }
 div.page_localization a.localization_link { color: #101010; font-weight: 600; }
 
-@media only screen and (min-width: 768px) { div.div_header a.go_to_content, div.footer_author a.go_to_content { height: 2rem; width: 26rem; font-size: 2rem; bottom: -2rem; left: 2rem; transition: background .4s linear .1s; transition: color .4s linear .1s; }
+@media only screen and (min-width: 768px) { div.div_header a.go_to_content, div.footer_author a.go_to_content { height: 2rem; width: 26rem; font-size: 2rem; bottom: -2.4rem; left: 8.6rem; transition: background .4s linear .1s; transition: color .4s linear .1s; }
   div.div_header a.go_to_content:hover, div.footer_author a.go_to_content:hover { color: #010101; background: #fbfe28; font-weight: 700; }
-  div.page_localization { -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); margin-left: 34rem; margin-top: 0; }
+  div.page_localization { -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); margin-left: 38rem; margin-top: 0; }
   div.page_localization a.localization_link { transition: background .4s linear .1s; font-size: 1.4rem; }
   div.page_localization a.localization_link:hover { color: #010101; background: #fbfe28; } }
-div.footer_single_page { background: #ab005d; background: #ab005d; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #cc1f7d, #ab005d); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #cc1f7d, #ab005d); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #cc1f7d, #ab005d); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #cc1f7d, #ab005d); /* Standard syntax */ width: 100%; margin-top: 4rem; margin-left: 0; margin-right: 0; margin-bottom: 0; color: #feffda; position: relative; height: 34rem; }
-div.footer_single_page div.footer_nav { height: 2.4rem; width: 18rem; font-size: 1.8rem; text-align: center; padding-left: 0; padding-right: 0; padding-top: .8rem; padding-bottom: .8rem; position: absolute; top: -2rem; left: .8rem; background: #010101; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #222222, #010101); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #222222, #010101); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #222222, #010101); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #222222, #010101); /* Standard syntax */ color: #fbfe28; letter-spacing: .7rem; box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.2), 2px 8px 22px 0 rgba(0, 0, 0, 0.19); }
-div.footer_single_page div.footer_nav ul { list-style: none; padding-left: 0; }
-div.footer_single_page div.footer_nav ul li { background: #010101; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #222222, #010101); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #222222, #010101); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #222222, #010101); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #222222, #010101); /* Standard syntax */ width: 90%; margin-left: 0; margin-top: .4rem; padding: .8rem; }
-div.footer_single_page div.footer_nav ul li a { letter-spacing: .4rem; font-size: 1.2rem; color: #feffda; width: 100%; height: 100%; }
-div.footer_single_page div.site_by { font-size: .8rem; width: auto; position: absolute; bottom: .8rem; left: .8rem; }
-div.footer_single_page div.site_by a { display: inline-block; text-decoration: underline; }
-
-@media only screen and (min-width: 768px) { div.footer_single_page { -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); min-width: 140%; height: 52rem; margin-top: 10rem; margin-bottom: -18rem; margin-left: -14rem; }
-  div.footer_single_page div.footer_nav { -ms-transform: rotate(-6deg); -webkit-transform: rotate(-6deg); transform: rotate(-6deg); left: 22rem; }
-  div.footer_single_page div.footer_nav ul li { transition: background .4s linear .1s; }
-  div.footer_single_page div.footer_nav ul li:hover { background: #fbfe28; }
-  div.footer_single_page div.footer_nav ul li:hover a { color: #010101; font-weight: 700; }
-  div.footer_single_page div.site_by { top: 32rem; left: 25%; -ms-transform: rotate(-6deg); -webkit-transform: rotate(-6deg); transform: rotate(-6deg); } }
-
-ol.main_nav a, div.footer_author a { display: block; text-decoration: none; color: #fbfe28; }
-
-*:focus { border: 5px solid #ab005d; }
-
 a { position: relative; color: #000; }
 a:focus .read_next, a:hover .read_next { top: 23rem; left: 15rem; }
 
-
-ol.main_nav a, div.footer_author a { display: block; text-decoration: none; color: #fbfe28; }
-
-*:focus { border: 5px solid #ab005d; }
-
-a { position: relative; color: #000; }
-a:focus .read_next, a:hover .read_next { top: 23rem; left: 15rem; }
-
-
-.read_next { background: #1a0061; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #4c2bad, #1a0061); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #4c2bad, #1a0061); /* Standard syntax */ color: #fbfe28; font-family: "Lato", sans-serif; width: 25rem; height: 6rem; font-size: 4rem; font-weight: bold; position: absolute; top: 23rem; left: -150rem; }
-.read_next:focus { top: 23rem; left: 15rem; }
+.read_next { display: none; }
 
 .line { border-top: 2px dashed #ab005d; width: 100%; }
 
 .article { position: relative; width: 80%; font-size: 1.5rem; margin-left: auto; margin-right: auto; }
 
-#after_article { margin-top: 1.5rem; margin-bottom: 1.5rem; }
-#after_article > a { font-style: italic; }
-#after_article > a:focus, #after_article > a:hover { background: #ffff00; }
+.after_article { margin-top: 1.5rem; margin-bottom: 1.5rem; }
+.after_article > a { font-style: italic; }
 
 h2 { z-index: 2; width: 100%; font-size: 2.5rem; background: #1a0061; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #4c2bad, #1a0061); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #4c2bad, #1a0061); /* Standard syntax */ box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.2), 2px 8px 22px 0 rgba(0, 0, 0, 0.19); color: #ffff00; text-align: center; padding-right: 1%; padding-left: 1%; }
 
-
 @media only screen and (min-width: 768px) { .article { font-size: 1.5rem; width: 70%; }
-  h2 { text-align: right; font-size: 2.5rem; margin-right: 70%; margin-left: -50%; padding-right: 5%; padding-top: 1.5%; padding-bottom: 1.5%; transform: skewX(-6deg); } }
-
-@media only screen and (min-width: 768px) { .article { font-size: 2.2rem; width: 70%; }
-  h2 { text-align: right; font-size: 3rem; margin-right: 70%; margin-left: -50%; padding-right: 5%; padding-top: 1.5%; padding-bottom: 1.5%; transform: skewX(-6deg); } }
-
-
-div.div_header a.go_to_content, div.footer_author a.go_to_content, div.footer_single_page div.footer_nav ul li a, div.footer_single_page div.site_by a, ol.main_nav a, div.footer_author a { display: block; text-decoration: none; color: #fbfe28; }
-
-div.div_header, div.footer_author { position: relative; }
-div.div_header a.go_to_content, div.footer_author a.go_to_content { height: 1rem; width: 14rem; font-size: 1rem; text-align: center; padding: .8rem; position: absolute; bottom: -2rem; left: .8rem; background: #010101; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #222222, #010101); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #222222, #010101); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #222222, #010101); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #222222, #010101); /* Standard syntax */ color: #feffda; box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.2), 2px 8px 22px 0 rgba(0, 0, 0, 0.19); }
-
-div.page_localization { margin-top: 3rem; margin-bottom: 3rem; margin-left: .8rem; }
-div.page_localization a.localization_link { color: #101010; font-weight: 600; }
-
-@media only screen and (min-width: 768px) { div.div_header a.go_to_content, div.footer_author a.go_to_content { height: 2rem; width: 26rem; font-size: 2rem; bottom: -2rem; left: 2rem; transition: background .4s linear .1s; transition: color .4s linear .1s; }
-  div.div_header a.go_to_content:hover, div.footer_author a.go_to_content:hover { color: #010101; background: #fbfe28; font-weight: 700; }
-  div.page_localization { -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); margin-left: 34rem; margin-top: 0; }
-  div.page_localization a.localization_link { transition: background .4s linear .1s; font-size: 1.4rem; }
-  div.page_localization a.localization_link:hover { color: #010101; background: #fbfe28; } }
+  .read_next { display: block; background: #1a0061; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #4c2bad, #1a0061); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #4c2bad, #1a0061); /* Standard syntax */ color: #fbfe28; font-family: "Lato", sans-serif; width: 25rem; height: 6rem; font-size: 4rem; font-weight: bold; position: absolute; top: 23rem; left: -150rem; }
+  .read_next:focus { top: 23rem; left: 15rem; }
+  h2 { text-align: right; font-size: 2.5rem; margin-right: 70%; margin-left: -50%; padding-right: 5%; padding-top: 1.5%; padding-bottom: 1.5%; transform: skewX(-6deg); }
+  .after_article > a:focus, .after_article > a:hover { background: #ffff00; } }
 div.footer_single_page { background: #ab005d; background: #ab005d; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #cc1f7d, #ab005d); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #cc1f7d, #ab005d); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #cc1f7d, #ab005d); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #cc1f7d, #ab005d); /* Standard syntax */ width: 100%; margin-top: 4rem; margin-left: 0; margin-right: 0; margin-bottom: 0; color: #feffda; position: relative; height: 34rem; }
 div.footer_single_page div.footer_nav { height: 2.4rem; width: 18rem; font-size: 1.8rem; text-align: center; padding-left: 0; padding-right: 0; padding-top: .8rem; padding-bottom: .8rem; position: absolute; top: -2rem; left: .8rem; background: #010101; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #222222, #010101); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #222222, #010101); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #222222, #010101); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #222222, #010101); /* Standard syntax */ color: #fbfe28; letter-spacing: .7rem; box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.2), 2px 8px 22px 0 rgba(0, 0, 0, 0.19); }
 div.footer_single_page div.footer_nav ul { list-style: none; padding-left: 0; }
@@ -92,9 +46,6 @@ div.footer_single_page div.site_by a { display: inline-block; text-decoration: u
   div.footer_single_page div.footer_nav ul li:hover { background: #fbfe28; }
   div.footer_single_page div.footer_nav ul li:hover a { color: #010101; font-weight: 700; }
   div.footer_single_page div.site_by { top: 32rem; left: 25%; -ms-transform: rotate(-6deg); -webkit-transform: rotate(-6deg); transform: rotate(-6deg); } }
-
-
-
 body { margin: 0; padding: 0; font-family: "Lato", sans-serif; letter-spacing: 0.2rem; background: #feffda; box-sizing: border-box; }
 
 div#page_container { overflow: hidden; }
@@ -104,12 +55,12 @@ div.div_header h1.page_title, div.footer_author h1.page_title { font-size: 2.2re
 
 div#about { width: 90%; margin-top: 1rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto; font-size: 2rem; font-weight: 600; color: #ab005d; }
 
-ol.main_nav { margin: 0; padding: 0; list-style: none; }
-ol.main_nav a { margin: 1.6rem; background: #1a0061; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #4c2bad, #1a0061); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #4c2bad, #1a0061); /* Standard syntax */ box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.2), 2px 8px 22px 0 rgba(0, 0, 0, 0.19); text-align: center; padding-top: 2rem; padding-bottom: 2rem; font-size: 3rem; border-radius: 1%; }
-ol.main_nav a.menu_contact { background: #010101; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #222222, #010101); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #222222, #010101); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #222222, #010101); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #222222, #010101); /* Standard syntax */ color: #feffda; height: 16rem; }
-ol.main_nav a.menu_contact i { padding-top: .8rem; padding-bottom: .8rem; }
-ol.main_nav a.menu_contact div.menu_option { margin-bottom: 1.2rem; }
-ol.main_nav a i { color: #feffda; font-size: 7.4rem; display: block; margin-left: auto; margin-right: auto; padding-top: 2rem; padding-bottom: 2.2rem; text-shadow: 4px 8px 12px rgba(0, 0, 0, 0.2); }
+ul.main_nav { margin: 0; padding: 0; list-style: none; }
+ul.main_nav a { margin: 1.6rem; background: #1a0061; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #4c2bad, #1a0061); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #4c2bad, #1a0061); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #4c2bad, #1a0061); /* Standard syntax */ box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.2), 2px 8px 22px 0 rgba(0, 0, 0, 0.19); text-align: center; padding-top: 2rem; padding-bottom: 2rem; font-size: 3rem; border-radius: 1%; }
+ul.main_nav a.menu_contact { background: #010101; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(left top, #222222, #010101); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(bottom right, #222222, #010101); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(bottom right, #222222, #010101); /* For Firefox 3.6 to 15 */ background: linear-gradient(to bottom right, #222222, #010101); /* Standard syntax */ color: #feffda; height: 16rem; }
+ul.main_nav a.menu_contact i { padding-top: .8rem; padding-bottom: .8rem; }
+ul.main_nav a.menu_contact div.menu_option { margin-bottom: 1.2rem; }
+ul.main_nav a i { color: #feffda; font-size: 7.4rem; display: block; margin-left: auto; margin-right: auto; padding-top: 2rem; padding-bottom: 2.2rem; text-shadow: 4px 8px 12px rgba(0, 0, 0, 0.2); }
 
 div.footer_author { font-size: .8rem; margin: 0; padding: 1.2rem; }
 div.footer_author a { display: inline-block; text-decoration: underline; }
@@ -117,16 +68,16 @@ div.footer_author a { display: inline-block; text-decoration: underline; }
 @media only screen and (min-width: 768px) { div.div_header, div.footer_author { text-align: right; -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); min-width: 120%; min-height: 18rem; margin-top: -10rem; position: relative; }
   div.div_header h1.page_title, div.footer_author h1.page_title { position: absolute; bottom: 0; right: 20%; font-size: 3rem; }
   div#about { -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); margin-top: -2rem; margin-bottom: .4rem; margin-left: 4rem; text-align: center; }
-  ol.main_nav { display: flex; flex-wrap: wrap; margin-left: auto; margin-right: auto; padding-top: 4rem; padding-bottom: 4rem; align-items: center; justify-content: center; }
-  ol.main_nav a { width: 38rem; height: 28rem; -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); transition: background .4s linear .1s; font-size: 3.8rem; }
-  ol.main_nav a i { font-size: 9rem; }
-  ol.main_nav a.menu_contact { align-self: flex-end; width: 76rem; height: 16rem; margin-left: 1.5rem; margin-right: 3.5rem; margin-top: 4rem; margin-bottom: 1.5rem; }
-  ol.main_nav a.menu_contact i { display: inline-block; }
-  ol.main_nav a.menu_contact div.menu_option { display: inline-block; vertical-align: super; }
-  ol.main_nav a.menu_contact:hover, ol.main_nav a.menu_contact:focus { height: 16rem; font-size: 8rem; letter-spacing: .4rem; color: #010101; }
-  ol.main_nav a.menu_contact:hover div.menu_option, ol.main_nav a.menu_contact:focus div.menu_option { margin-top: 2.4rem; }
-  ol.main_nav a:hover, ol.main_nav a:focus { background: #fbfe28; color: #1a0061; font-size: 5.9rem; font-weight: 700; height: 28rem; }
-  ol.main_nav a:hover i, ol.main_nav a:focus i { display: none; }
+  ul.main_nav { display: flex; flex-wrap: wrap; margin-left: auto; margin-right: auto; padding-top: 4rem; padding-bottom: 4rem; align-items: center; justify-content: center; }
+  ul.main_nav a { width: 38rem; height: 28rem; -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); transition: background .4s linear .1s; font-size: 3.8rem; }
+  ul.main_nav a i { font-size: 9rem; }
+  ul.main_nav a.menu_contact { align-self: flex-end; width: 76rem; height: 16rem; margin-left: 1.5rem; margin-right: 3.5rem; margin-top: 4rem; margin-bottom: 1.5rem; }
+  ul.main_nav a.menu_contact i { display: inline-block; }
+  ul.main_nav a.menu_contact div.menu_option { display: inline-block; vertical-align: super; }
+  ul.main_nav a.menu_contact:hover, ul.main_nav a.menu_contact:focus { height: 16rem; font-size: 8rem; letter-spacing: .4rem; color: #010101; }
+  ul.main_nav a.menu_contact:hover div.menu_option, ul.main_nav a.menu_contact:focus div.menu_option { margin-top: 2.4rem; }
+  ul.main_nav a:hover, ul.main_nav a:focus { background: #fbfe28; color: #1a0061; font-size: 5.9rem; font-weight: 700; height: 28rem; }
+  ul.main_nav a:hover i, ul.main_nav a:focus i { display: none; }
   div.footer_author { text-align: left; margin-top: .5rem; margin-bottom: -13rem; margin-left: -14rem; padding-left: 15rem; } }
 
 /*# sourceMappingURL=main.css.map */
