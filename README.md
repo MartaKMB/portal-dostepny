@@ -1,4 +1,4 @@
-# projekt_ogolnie_DOSTEPNY
+# portal_ogolnie_DOSTEPNY
 
 Project inspired by testuj.pl and organized by them webinar with Piotr Źrołka about web accessibility: 
 [PL] https://www.youtube.com/watch?v=LiAVqWUUN4E&t=3s . 
